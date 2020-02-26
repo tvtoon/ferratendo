@@ -1,0 +1,5 @@
+# en.UTF-8
+
+Collection of tools to build my Nintendo ROM information database. While the tools are not incredible, what most people will be looking for are the files: "codigos_letras.h", "produtoras.notas", and "regioes.notas".
+
+These files are written in portuguese and hold most information I analyzed by checking the headers, and compared to data inside the games. I also have a good deal about game formats used since DS/Wii era, but they will be postponed for a proper "archive" project.

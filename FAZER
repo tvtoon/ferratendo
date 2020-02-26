@@ -1,0 +1,36 @@
+# pt_BR.utf-8
+
+1.0) Alertas para GBC.
+
+- Se o código antigo do produtor não for 0x33 e se o novo endereço estiver
+  preenchido (esse também separadamente).
+
+- Soma de verificação total errada.
+
+2.0) Prioridade mínima para GBC.
+
+Fazer testes no código para saber se ele é parte do título tais como...
+
+- Se tiver espaços (0x20) ou zeros (0x0) é parte do título.
+- Se a última letra não for uma região válida, é parte do título.
+
+3.0) DS.
+
+Dar um jeito de diminuir o número de macros e alterar alguns nomes...
+
+Os dados de DS precisam de MUITOS testes, algum dia eu vou baixar e verificar
+em todas as ROOMs possíveis para saber coisas como: se o CRC16 do GBATEK está
+correto, como devo interpretar alguns dados e, SDQ, ter uma noção melhor da
+encriptação que é usada no processo de inicialização, por exemplo.
+
+Começar a fazer os empacotadores de DS pela leitura do sistema de arquivos dos
+jogos. Acoplar tudo depois em um só projeto.
+
+x.x) Cálculo de soma.
+
+Os de GB e GBA parecem corretos e já estão "matematizados",
+os de DS exigem cuidados pois foram alterados de forma diferente do que
+o GBATEK afirma, no DeSmuME...
+
+- Entender como 0x3460F367 vira 0xA7F1 e 0x9AADD155 vira 0x3384,
+  comparação em paralelo do comando "cksum" com somas do jogo DQM Joker 2 Pro.
